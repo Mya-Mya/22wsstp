@@ -1,0 +1,32 @@
+<html lang="ja">
+  <head>
+    {% with ogp_type = 'website', ogp_title = '芝山町QUIZトップ' %} {% include
+    'ogptags.html' %} {% endwith %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>芝山町QUIZ | 22冬-春の芝山寺子屋プロジェクト</title>
+  </head>
+  <body class="h-100 d-flex flex-column">
+    {% include 'headerbar.html' %}
+    <div
+      class="flex-grow-1 d-flex flex-column justify-content-center align-items-center"
+    >
+      <h3 class="display-3">芝山町QUIZ</h3>
+      <p class="text-muted">
+        このWebサイトは、
+        <br />
+        芝山寺子屋プロジェクトに参加した生徒さん達が、
+        <br />
+        芝山の魅力をPRするために作成しました。
+      </p>
+      <div class="btn-group">
+        <a href="1Q.html" class="btn btn-dark">始める</a>
+      </div>
+    </div>
+  </body>
+</html>
