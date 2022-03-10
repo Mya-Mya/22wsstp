@@ -1,0 +1,48 @@
+<html lang="ja">
+  <head>
+    {% with ogp_type = 'article', ogp_title = title %} {% include 'ogptags.html'
+    %} {% endwith %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>{{title}}</title>
+  </head>
+  <body>
+    {% include 'headerbar.html' %}
+    <div class="container-fluid">
+      <!--▼画面上部追加▼-->
+      <!--▲画面上部追加▲-->
+    </div>
+    <div class="container pt-3">
+      <h5 class="h5">{{title}}</h5>
+      <p class="display-6 text-wrap">
+        <!--▼質問文▼-->
+        芝山町は何県にある？
+        <!--▲質問文▲-->
+      </p>
+    </div>
+    <div
+      class="container d-flex flex-column align-items-center justify-content-between"
+    >
+      <a href="{{S1_fn}}" class="btn btn-outline-dark w-100 mb-2">
+        <!--▼選択肢1▼-->
+        神奈川県
+        <!--▲選択肢2▲-->
+      </a>
+      <a href="{{S2_fn}}" class="btn btn-outline-dark w-100 mb-2">
+        <!--▼選択肢2▼-->
+        東京都
+        <!--▲選択肢2▲-->
+      </a>
+      <a href="{{S3_fn}}" class="btn btn-outline-dark w-100">
+        <!--▼選択肢3▼-->
+        千葉県
+        <!--▲選択肢3▲-->
+      </a>
+    </div>
+  </body>
+</html>
