@@ -1,0 +1,54 @@
+<html lang="ja">
+  <head>
+    {% with ogp_type = 'article', ogp_title = title %} {% include 'ogptags.html'
+    %} {% endwith %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>{{title}}</title>
+  </head>
+  <body class="h-100 d-flex flex-column">
+    {% include 'headerbar.html' %}
+    <div class="container-fluid">
+      <!--▼画面上部追加▼-->
+      <!--▲画面上部追加▲-->
+    </div>
+    <div
+      class="container flex-grow-1 d-flex flex-column justify-content-center align-items-center"
+    >
+      <h5 class="h5">
+        <!--▼正解の時▼-->
+        正解🎉
+        <!--▲正解の時▲-->
+
+        <!--▼不正解の時▼-->
+        残念...
+        <!--▲不正解の時▲-->
+      </h5>
+      <!--▼正解の時▼-->
+      <p class="display-6 text-success">正解は、千葉県です！</p>
+      <!--▲正解の時▲-->
+
+      <!--▼不正解の時▼-->
+      <p class="display-6">もう一度挑戦しましょう。</p>
+      <!--▲不正解の時▲-->
+
+      <p class="text-muted">
+        <!--▼解説▼-->
+        このページを訪れる人へ、様々なことを教えてあげましょう。
+        <!--▲解説▲-->
+      </p>
+
+      <div class="btn-group">
+        <a href="{{Q_fn}}" class="btn btn-outline-dark">今の問題に戻る</a>
+        <!--▼正解の時のみ▼-->
+        <a href="{{next_fn}}" class="btn btn-success">→</a>
+        <!--▲正解の時のみ▲-->
+      </div>
+    </div>
+  </body>
+</html>
